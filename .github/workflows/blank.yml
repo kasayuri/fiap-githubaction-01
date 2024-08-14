@@ -13,15 +13,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-    - name: Step 1 - Run a one-line script
+    - name: Step 1 - Check out the code
       uses: actions/checkout@v4
-      run: echo Olá, turma da disciplina GitHub actions!
 
-    - name: Step 2 - Run a multi-line script
+    - name: Step 2 - Run a one-line script
+      run: echo Olá, turma da disciplina GitHub actions! 
+
+    - name: Step 3 - Run a multi-line script
       run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-
-    - name: Step 3
-      uses: actions/checkout@v2
-      run: echo "Hello World"
